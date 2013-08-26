@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="fr.acensi.web.client.core">
+  <class name="Article" table="T_ARTICLE">
+    <id name="idArticle" type="int" column="ART_ID">
+      <generator class="increment" />
+    </id>
+    <property name="libelleArticle" type="string">
+      <column name="ART_LIBELLE" not-null="true" />
+    </property>
+  </class>
+</hibernate-mapping>
