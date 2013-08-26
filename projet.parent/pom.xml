@@ -18,8 +18,8 @@
   </dependencies>
   <packaging>pom</packaging>
   <modules>
-    <module>projet.core</module>
-    <module>projet.gwt</module>
+    <module>../projet.core</module>
+    <module>../projet.gwt</module>
   </modules>
   <organization>
     <name>Ceritek</name>
