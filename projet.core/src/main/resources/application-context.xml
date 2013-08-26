@@ -1,9 +1,9 @@
 <!-- MySQL -->
 <bean id="basicDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" destroy-method="close">
-  <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-  <property name="url" value="jdbc:mysql://localhost:3306/my_db" />
-  <property name="username" value="root" />
-  <property name="password" value="ceritek" />
+  <property name="driverClassName">org.hsqldb.jdbcDriver</property>
+  <property name="url">jdbc:hsqldb:hsql://localhost/</property>
+  <property name="username">sa</property>
+  <property name="password"></property>
 </bean>
 
 <!--ConfigurationdelasessionFactory -->
@@ -22,7 +22,7 @@
       <prop key="hibernate.cache.use_second_level_cache">false</prop>
       <prop key="hibernate.jdbc.batch_size">20</prop>
       <prop key="hibernate.max_fetch_depth">3</prop>
-      <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+      <prop key="hibernate.dialect">org.hibernate.dialect.HSQLDialect</prop>
       <prop key="hibernate.show_sql">true</prop>
     </props>
   </property>
