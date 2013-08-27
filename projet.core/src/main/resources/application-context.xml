@@ -31,4 +31,9 @@
 <bean id="abstractDao" abstract="true">
   <property name="sessionFactory" ref="sessionFactory" />
 </bean>
+
 <bean id="articleDao" class="fr.manuelpayet.gwt.dao.ArticleDao" parent="abstractDao" />
+
+<bean id="articleService" class="fr.manuelpayet.gwt.service.ArticleServiceImpl">
+  <property name="articleDao" ref="articleDao" />
+</bean>
