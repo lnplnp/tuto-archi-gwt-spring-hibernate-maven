@@ -1,4 +1,4 @@
-package fr.manuelpayet.gwt;
+package fr.manuelpayet.gwt.core;
 
 import java.io.Serializable;
 

@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.orm.hibernate3.HibernateTemplate;
 
-import fr.manuelpayet.gwt.Article;
+import fr.manuelpayet.gwt.core.Article;
 
 /**
  * Classe DAOArticle

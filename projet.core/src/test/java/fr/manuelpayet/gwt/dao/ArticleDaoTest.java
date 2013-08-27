@@ -6,8 +6,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.orm.hibernate3.HibernateTemplate;
 
-import fr.manuelpayet.gwt.Article;
-import fr.manuelpayet.gwt.dao.ArticleDao;
+import fr.manuelpayet.gwt.core.Article;
 
 public class ArticleDaoTest extends TestCase {
 
