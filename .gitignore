@@ -7,3 +7,5 @@
 
 .settings/
 projet.core/target/
+projet.gwt/target/
+projet.parent/target/
