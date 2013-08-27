@@ -80,6 +80,23 @@
           <target>${maven.compiler.target}</target>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>gwt-maven-plugin</artifactId>
+        <version>1.2</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>compile</goal>
+              <goal>test</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <runTarget>fr.manuelpayet.gwt.Application/Application.html</runTarget>
+          <extraJvmArgs>-Xmx1024m -Xss512k</extraJvmArgs>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
