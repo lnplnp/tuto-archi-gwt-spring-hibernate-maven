@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "//gwt-module/"
+    "http://google-web-toolkit.googlecode.com/svn/tags/2.5.1/distro-source/core/src/gwt-module.dtd">
+<module>
+  <!-- Inherit our applications main module. -->
+  <inherits name='fr.manuelpayet.Application' />
+
+  <!-- Specify the path to any remote services. -->
+  <servlet path="/Application/greet" class="fr.manuelpayet.server.GreetingServiceImpl" />
+
+</module>
