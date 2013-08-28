@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <!-- MySQL -->
+  <bean id="basicDataSource" 
+    class="org.springframework.jdbc.datasource.DriverManagerDataSource" destroy-method="close">
+      <property name="driverClassName" value="com.mysql.jdbc.Driver" />
+      <property name="url" value="jdbc:mysql://localhost:8889/MY_DB" />
+      <property name="username" value="root" />
+      <property name="password" value="ceritek93" />
+  </bean>
+
+  <!-- Configuration de la sessionFactory -->
+  <bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+      <property name="dataSource" ref="basicDataSource" />
+      <property name="mappingResources">
+          <list>
+              <value>Article.hbm.xml</value>
+          </list>
+      </property>
+      <!-- hibernate : propriétés -->
+    <property name="hibernateProperties">
+      <props>
+          <prop key="hibernate.query.substitutions">true='Y', false='N'</prop>
+          <prop key="hibernate.cache.provider_class">org.hibernate.cache.HashtableCacheProvider</prop>
+          <prop key="hibernate.cache.use_second_level_cache">false</prop>
+          <prop key="hibernate.jdbc.batch_size">20</prop>
+          <prop key="hibernate.max_fetch_depth">3</prop>
+          <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+          <prop key="hibernate.show_sql">true</prop>
+      </props>
+    </property>
+  </bean>
+
+</beans>
