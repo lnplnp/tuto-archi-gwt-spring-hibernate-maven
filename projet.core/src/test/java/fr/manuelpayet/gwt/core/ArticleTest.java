@@ -51,7 +51,6 @@ public class ArticleTest extends TestCase {
   protected void setUp() throws Exception {
     super.setUp();
     currentSession = sessionFactory.getCurrentSession();
-    currentSession.beginTransaction();
   }
 
   /*
@@ -65,7 +64,6 @@ public class ArticleTest extends TestCase {
   @After
   protected void tearDown() throws Exception {
     super.tearDown();
-    currentSession.getTransaction().commit();
     sessionFactory.close();
   }
 
@@ -73,80 +71,21 @@ public class ArticleTest extends TestCase {
    * 
    */
   @Test
-  public void testHashCode() {
-    assertNull("Not yet implemented", null);
-  }
-
-  /**
-   * 
-   */
-  @Test
   public void testArticle() {
+    currentSession.beginTransaction();
 
     String libelle = "libelle de l'article";
 
     Article article = new Article(libelle);
+    currentSession.save(article);
+
+    currentSession.getTransaction().commit();
+
     Integer idArticle = article.getIdArticle();
 
     assertNotNull(article);
     assertNotNull(idArticle);
     assertEquals(libelle, article.getLibelleArticle());
-  }
-
-  /**
-   * 
-   */
-  @Test
-  public void testArticleString() {
-    assertNull("Not yet implemented", null);
-  }
-
-  /**
-   * 
-   */
-  @Test
-  public void testArticleIntegerString() {
-    assertNull("Not yet implemented", null);
-  }
-
-  /**
-   * 
-   */
-  @Test
-  public void testEqualsObject() {
-    assertNull("Not yet implemented", null);
-  }
-
-  /**
-   * 
-   */
-  @Test
-  public void testGetIdArticle() {
-    assertNull("Not yet implemented", null);
-  }
-
-  /**
-   * 
-   */
-  @Test
-  public void testSetIdArticle() {
-    assertNull("Not yet implemented", null);
-  }
-
-  /**
-   * 
-   */
-  @Test
-  public void testGetLibelleArticle() {
-    assertNull("Not yet implemented", null);
-  }
-
-  /**
-   * 
-   */
-  @Test
-  public void testSetLibelleArticle() {
-    assertNull("Not yet implemented", null);
   }
 
 }
