@@ -15,7 +15,7 @@
     <property name="dataSource" ref="basicDataSource" />
     <property name="mappingResources">
       <list>
-        <value>fr/manuelpayet/gwt/core/Article.hbm.xml</value>
+        <value>fr/manuelpayet/gwt/core/model/Article.hbm.xml</value>
       </list>
     </property>
     <!-- hibernate : propriétés -->
