@@ -11,7 +11,7 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.TextBox;
 
-import fr.manuelpayet.gwt.client.rpc.ArticleServiceRPC;
+import fr.manuelpayet.gwt.client.rpc.ArticleService;
 import fr.manuelpayet.gwt.core.model.Article;
 
 /**
@@ -39,7 +39,7 @@ public class Application implements EntryPoint {
         // creation d'une instance article
         Article article = new Article(textbox.getText());
         // appel rpc
-        ArticleServiceRPC.Util.getInstance().mergeArticle(article, callback);
+        ArticleService.Util.getInstance().mergeArticle(article, callback);
       }
     });
     // panel
