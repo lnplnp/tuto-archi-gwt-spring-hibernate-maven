@@ -2,6 +2,7 @@ package fr.manuelpayet.gwt.server;
 
 import javax.servlet.ServletException;
 
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -24,8 +25,12 @@ public class ArticleServiceImpl extends RemoteServiceServlet implements ArticleS
 
   @Override
   public Article mergeArticle(Article article) throws Exception {
-    // TODO Auto-generated method stub
-    return null;
+    Session currentSession = sessionFactory.getCurrentSession();
+    currentSession.beginTransaction();
+    currentSession.save(article);
+    currentSession.getTransaction().commit();
+    currentSession.close();
+    return article;
   }
 
 }
