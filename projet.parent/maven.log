@@ -1,0 +1,191 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] projet.parent
+[INFO] projet.core
+[INFO] projet.gwt
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building projet.parent 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ projet.parent ---
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ projet.parent ---
+[INFO] Installing C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.parent\pom.xml to C:\Users\Manuel\.m2\repository\fr\manuelpayet\projet.parent\1.0-SNAPSHOT\projet.parent-1.0-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building projet.core 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ projet.core ---
+[INFO] Deleting C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.core\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ projet.core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ projet.core ---
+[INFO] Compiling 2 source files to C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.core\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ projet.core ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ projet.core ---
+[INFO] Compiling 2 source files to C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.core\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ projet.core ---
+[INFO] Surefire report directory: C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.core\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running fr.manuelpayet.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 sec
+Running fr.manuelpayet.gwt.core.ArticleTest
+sept. 02, 2013 11:24:16 AM org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@571ba4a2: startup date [Mon Sep 02 11:24:16 CEST 2013]; root of context hierarchy
+sept. 02, 2013 11:24:16 AM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [application-context.xml]
+sept. 02, 2013 11:24:17 AM org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3680bc43: defining beans [basicDataSource,sessionFactory]; root of factory hierarchy
+sept. 02, 2013 11:24:17 AM org.springframework.jdbc.datasource.DriverManagerDataSource setDriverClassName
+INFO: Loaded JDBC driver: com.mysql.jdbc.Driver
+sept. 02, 2013 11:24:18 AM org.hibernate.annotations.common.Version <clinit>
+INFO: HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+sept. 02, 2013 11:24:18 AM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {4.2.5.Final}
+sept. 02, 2013 11:24:18 AM org.hibernate.cfg.Environment <clinit>
+INFO: HHH000206: hibernate.properties not found
+sept. 02, 2013 11:24:18 AM org.hibernate.cfg.Environment buildBytecodeProvider
+INFO: HHH000021: Bytecode provider name : javassist
+sept. 02, 2013 11:24:19 AM org.hibernate.dialect.Dialect <init>
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+sept. 02, 2013 11:24:19 AM org.hibernate.engine.transaction.internal.TransactionFactoryInitiator initiateService
+INFO: HHH000399: Using default transaction strategy (direct JDBC transactions)
+sept. 02, 2013 11:24:19 AM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory <init>
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+sept. 02, 2013 11:24:19 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000228: Running hbm2ddl schema update
+sept. 02, 2013 11:24:19 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000102: Fetching database metadata
+sept. 02, 2013 11:24:19 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000396: Updating schema
+sept. 02, 2013 11:24:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000261: Table found: MY_DB.t_article
+sept. 02, 2013 11:24:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000037: Columns: [art_id, art_libelle]
+sept. 02, 2013 11:24:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000108: Foreign keys: []
+sept. 02, 2013 11:24:19 AM org.hibernate.tool.hbm2ddl.TableMetadata <init>
+INFO: HHH000126: Indexes: [primary]
+sept. 02, 2013 11:24:19 AM org.hibernate.tool.hbm2ddl.SchemaUpdate execute
+INFO: HHH000232: Schema update complete
+Hibernate: select max(ART_ID) from T_ARTICLE
+Hibernate: insert into T_ARTICLE (ART_LIBELLE, ART_ID) values (?, ?)
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.191 sec
+
+Results :
+
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.3.2:jar (default-jar) @ projet.core ---
+[INFO] Building jar: C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.core\target\projet.core-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.3.1:install (default-install) @ projet.core ---
+[INFO] Installing C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.core\target\projet.core-1.0-SNAPSHOT.jar to C:\Users\Manuel\.m2\repository\fr\manuelpayet\projet.core\1.0-SNAPSHOT\projet.core-1.0-SNAPSHOT.jar
+[INFO] Installing C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.core\pom.xml to C:\Users\Manuel\.m2\repository\fr\manuelpayet\projet.core\1.0-SNAPSHOT\projet.core-1.0-SNAPSHOT.pom
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building projet.gwt 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ projet.gwt ---
+[INFO] Deleting C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.gwt\target
+[INFO] Deleting C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.gwt\src\main\webapp\WEB-INF\classes
+[INFO] 
+[INFO] --- gwt-maven-plugin:2.5.1:i18n (default) @ projet.gwt ---
+[INFO] 
+[INFO] --- gwt-maven-plugin:2.5.1:generateAsync (default) @ projet.gwt ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:resources (default-resources) @ projet.gwt ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:compile (default-compile) @ projet.gwt ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.gwt\src\main\webapp\WEB-INF\classes
+[INFO] 
+[INFO] --- maven-war-plugin:2.1.1:exploded (default) @ projet.gwt ---
+[INFO] Exploding webapp
+[INFO] Assembling webapp [projet.gwt] in [C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.gwt\target\projet.gwt-1.0-SNAPSHOT]
+[INFO] Processing war project
+[INFO] Copying webapp resources [C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.gwt\src\main\webapp]
+[INFO] Webapp assembled in [667 msecs]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.5:testResources (default-testResources) @ projet.gwt ---
+[debug] execute contextualize
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.0:testCompile (default-testCompile) @ projet.gwt ---
+[INFO] Changes detected - recompiling the module!
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ projet.gwt ---
+[INFO] Surefire report directory: C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.gwt\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+
+Results :
+
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- gwt-maven-plugin:2.5.1:compile (default) @ projet.gwt ---
+[INFO] auto discovered modules [fr.manuelpayet.Application]
+[INFO] Compiling module fr.manuelpayet.Application
+[INFO]    Validating units:
+[INFO]       Ignored 81 units with compilation errors in first pass.
+[INFO] Compile with -strict or with -logLevel set to TRACE or DEBUG to see all errors.
+[INFO]    Finding entry point classes
+[INFO]       [ERROR] Errors in 'file:/C:/Users/Manuel/Eclipse%20IDE/eclipse-jee-juno-win32-x86_64/workspaces/moi/tuto-archi-gwt-spring-hibernate-maven/projet.gwt/src/main/java/fr/manuelpayet/client/Application.java'
+[INFO]          [ERROR] Line 30: No source code is available for type fr.manuelpayet.gwt.core.model.Article; did you forget to inherit a required module?
+[INFO]          [ERROR] Line 42: No source code is available for type fr.manuelpayet.gwt.client.rpc.ArticleServiceAsync.Util; did you forget to inherit a required module?
+[INFO]       [ERROR] Unable to find type 'fr.manuelpayet.client.Application'
+[INFO]          [ERROR] Hint: Previous compiler errors may have made this type unavailable
+[INFO]          [ERROR] Hint: Check the inheritance chain from your module; it may not be inheriting a required module or a module may not be adding its source path entries properly
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO] 
+[INFO] projet.parent ..................................... SUCCESS [1.120s]
+[INFO] projet.core ....................................... SUCCESS [6.501s]
+[INFO] projet.gwt ........................................ FAILURE [11.959s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 19.742s
+[INFO] Finished at: Mon Sep 02 11:24:32 CEST 2013
+[INFO] Final Memory: 29M/191M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:gwt-maven-plugin:2.5.1:compile (default) on project projet.gwt: Command [[
+[ERROR] c:\Program Files\Java\jdk1.7.0_13\jre\bin\java -Xmx512m -classpath "C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.gwt\src\main\webapp\WEB-INF\classes;C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.gwt\src\main\java;C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.gwt\target\generated-sources\gwt;C:\Users\Manuel\.m2\repository\com\google\gwt\gwt-user\2.5.1\gwt-user-2.5.1.jar;C:\Users\Manuel\.m2\repository\org\json\json\20090211\json-20090211.jar;C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.core\target\projet.core-1.0-SNAPSHOT.jar;C:\Users\Manuel\.m2\repository\mysql\mysql-connector-java\5.1.25\mysql-connector-java-5.1.25.jar;C:\Users\Manuel\.m2\repository\org\springframework\spring-core\3.2.4.RELEASE\spring-core-3.2.4.RELEASE.jar;C:\Users\Manuel\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\Manuel\.m2\repository\org\springframework\spring-context-support\3.2.4.RELEASE\spring-context-support-3.2.4.RELEASE.jar;C:\Users\Manuel\.m2\repository\org\springframework\spring-beans\3.2.4.RELEASE\spring-beans-3.2.4.RELEASE.jar;C:\Users\Manuel\.m2\repository\org\springframework\spring-context\3.2.4.RELEASE\spring-context-3.2.4.RELEASE.jar;C:\Users\Manuel\.m2\repository\org\springframework\spring-aop\3.2.4.RELEASE\spring-aop-3.2.4.RELEASE.jar;C:\Users\Manuel\.m2\repository\org\springframework\spring-expression\3.2.4.RELEASE\spring-expression-3.2.4.RELEASE.jar;C:\Users\Manuel\.m2\repository\org\springframework\spring-jdbc\3.2.4.RELEASE\spring-jdbc-3.2.4.RELEASE.jar;C:\Users\Manuel\.m2\repository\org\springframework\spring-tx\3.2.4.RELEASE\spring-tx-3.2.4.RELEASE.jar;C:\Users\Manuel\.m2\repository\org\springframework\spring-orm\3.2.4.RELEASE\spring-orm-3.2.4.RELEASE.jar;C:\Users\Manuel\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Manuel\.m2\repository\org\hibernate\hibernate-core\4.2.5.Final\hibernate-core-4.2.5.Final.jar;C:\Users\Manuel\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Manuel\.m2\repository\org\jboss\logging\jboss-logging\3.1.0.GA\jboss-logging-3.1.0.GA.jar;C:\Users\Manuel\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Manuel\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.1_spec\1.0.1.Final\jboss-transaction-api_1.1_spec-1.0.1.Final.jar;C:\Users\Manuel\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\Manuel\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.2.Final\hibernate-commons-annotations-4.0.2.Final.jar;C:\Users\Manuel\.m2\repository\org\javassist\javassist\3.15.0-GA\javassist-3.15.0-GA.jar;C:\Users\Manuel\.m2\repository\javassist\javassist\3.12.1.GA\javassist-3.12.1.GA.jar;C:\Users\Manuel\.m2\repository\org\apache\logging\log4j\log4j-core\2.0-beta8\log4j-core-2.0-beta8.jar;C:\Users\Manuel\.m2\repository\org\apache\logging\log4j\log4j-api\2.0-beta8\log4j-api-2.0-beta8.jar;C:\Users\Manuel\.m2\repository\org\apache\logging\log4j\log4j-slf4j-impl\2.0-beta8\log4j-slf4j-impl-2.0-beta8.jar;C:\Users\Manuel\.m2\repository\org\slf4j\slf4j-api\1.7.5\slf4j-api-1.7.5.jar;C:\Users\Manuel\.m2\repository\org\slf4j\slf4j-ext\1.7.5\slf4j-ext-1.7.5.jar;C:\Users\Manuel\.m2\repository\ch\qos\cal10n\cal10n-api\0.7.4\cal10n-api-0.7.4.jar;C:\Users\Manuel\.m2\repository\com\google\gwt\gwt-user\2.5.1\gwt-user-2.5.1.jar;C:\Users\Manuel\.m2\repository\com\google\gwt\gwt-dev\2.5.1\gwt-dev-2.5.1.jar" com.google.gwt.dev.Compiler -logLevel INFO -style OBF -war "C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.gwt\target\projet.gwt-1.0-SNAPSHOT" -localWorkers 8 -XfragmentCount -1 -gen "C:\Users\Manuel\Eclipse IDE\eclipse-jee-juno-win32-x86_64\workspaces\moi\tuto-archi-gwt-spring-hibernate-maven\projet.gwt\target\.generated" fr.manuelpayet.Application
+[ERROR] ]] failed with status 1
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :projet.gwt
